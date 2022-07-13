@@ -16,7 +16,7 @@ int main(void)
     /* Replace with your application code */
 	
 	DDRD = (0x01 << LED);     //Configure the PORTD4 as output
-	DDRD &= ~ (0x01 << BUTTON);     //Configure the PORTD4 as output
+	DDRD &= ~ (0x01 << BUTTON);     //Configure the PORTD0 as input
     while (1) 
     {
 		if (PIND & (0x01 << BUTTON))
